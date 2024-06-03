@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Details</title>
+</head>
+<body>
+    <h1>Input Instagram Post Details</h1>
+    <form id="postForm" action="/process" method="POST" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="caption">Caption:</label>
+        <textarea id="caption" name="caption"></textarea><br><br>
+
+        <label for="schedule-time">Schedule Time (YYYY-MM-DD HH:MM:SS):</label>
+        <input type="text" id="schedule-time" name="scheduleTime" placeholder="YYYY-MM-DD HH:MM:SS"><br><br>
+
+        <label for="image">Select Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
